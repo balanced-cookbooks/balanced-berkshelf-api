@@ -16,17 +16,8 @@
 # limitations under the License.
 #
 
-source 'https://api.berkshelf.com'
-
-metadata
-
-# When bootstrapping, we need to reference our cookbooks more manually
-cookbook 'berkshelf-api', path: '../berkshelf'
-cookbook 'poise', github: 'poise/poise'
-cookbook 'citadel', github: 'balanced-cookbooks/citadel'
-cookbook 'balanced-citadel', github: 'balanced-cookbooks/balanced-citadel'
-
-group :test do
-  cookbook 'apt'
-  cookbook 'balanced-berkshelf-api_test', path: './test/cookbooks/balanced-berkshelf-api_test'
+# I could use the hostnames cookbook or something but it is 2:30AM so whatev
+execute "echo '127.0.0.1 berks.vandelay.io' >> /etc/hosts" do
+  user 'root'
+  not_if 'grep berks.vandelay.io /etc/hosts'
 end

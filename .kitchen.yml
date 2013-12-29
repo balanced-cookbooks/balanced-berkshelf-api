@@ -13,6 +13,7 @@ platforms:
 suites:
 - name: default
   run_list:
+  - recipe[balanced-berkshelf-api_test]
   - recipe[balanced-berkshelf-api]
   attributes:
     citadel:

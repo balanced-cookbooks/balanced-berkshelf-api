@@ -16,17 +16,6 @@
 # limitations under the License.
 #
 
-source 'https://api.berkshelf.com'
+name 'balanced-berkshelf-api_test'
 
-metadata
-
-# When bootstrapping, we need to reference our cookbooks more manually
-cookbook 'berkshelf-api', path: '../berkshelf'
-cookbook 'poise', github: 'poise/poise'
-cookbook 'citadel', github: 'balanced-cookbooks/citadel'
-cookbook 'balanced-citadel', github: 'balanced-cookbooks/balanced-citadel'
-
-group :test do
-  cookbook 'apt'
-  cookbook 'balanced-berkshelf-api_test', path: './test/cookbooks/balanced-berkshelf-api_test'
-end
+depends 'balanced-berkshelf-api'

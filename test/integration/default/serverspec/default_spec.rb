@@ -16,17 +16,24 @@
 # limitations under the License.
 #
 
-source 'https://api.berkshelf.com'
+require 'json'
+require 'net/http'
+require 'uri'
 
-metadata
+require 'serverspec'
+include Serverspec::Helper::Exec
+include Serverspec::Helper::DetectOS
 
-# When bootstrapping, we need to reference our cookbooks more manually
-cookbook 'berkshelf-api', path: '../berkshelf'
-cookbook 'poise', github: 'poise/poise'
-cookbook 'citadel', github: 'balanced-cookbooks/citadel'
-cookbook 'balanced-citadel', github: 'balanced-cookbooks/balanced-citadel'
+describe host('berks.vandelay.io') do
+  it { should be_resolvable.by('hosts') }
+end
 
-group :test do
-  cookbook 'apt'
-  cookbook 'balanced-berkshelf-api_test', path: './test/cookbooks/balanced-berkshelf-api_test'
+describe 'Berkshelf API' do
+  it 'should return status ok' do
+    http = Net::HTTP.new('berks.vandelay.io', 443)
+    http.use_ssl = true
+    http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+    data = JSON::parse(http.get('/status').body)
+    data['status'].should eq('ok')
+  end
 end
