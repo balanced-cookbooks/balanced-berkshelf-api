@@ -1,0 +1,76 @@
+{
+  "dependencies": {
+    "balanced-berkshelf-api": {
+      "locked_version": "1.0.0",
+      "path": "."
+    },
+    "berkshelf-api": {
+      "locked_version": "1.0.0",
+      "path": "../berkshelf"
+    },
+    "poise": {
+      "locked_version": "1.0.1",
+      "git": "git://github.com/poise/poise.git",
+      "ref": "012ceb7dcbb2a3982a172e2019d92d9ef051bd36"
+    },
+    "citadel": {
+      "locked_version": "1.0.1",
+      "git": "git://github.com/balanced-cookbooks/citadel.git",
+      "ref": "69d780e4c9808a033ef4dd69b19eb7243bb1216c"
+    },
+    "balanced-citadel": {
+      "locked_version": "1.0.0",
+      "git": "git://github.com/balanced-cookbooks/balanced-citadel.git",
+      "ref": "e47a2c845dafdfc399ef84a6e5f5a54ddc92bf35"
+    },
+    "apt": {
+      "locked_version": "2.3.4"
+    },
+    "balanced-berkshelf-api_test": {
+      "locked_version": "0.0.0",
+      "path": "./test/cookbooks/balanced-berkshelf-api_test"
+    },
+    "nginx": {
+      "locked_version": "2.2.0"
+    },
+    "git": {
+      "locked_version": "2.9.0"
+    },
+    "rbenv": {
+      "locked_version": "1.7.1"
+    },
+    "runit": {
+      "locked_version": "1.5.8"
+    },
+    "bluepill": {
+      "locked_version": "2.3.1"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "ohai": {
+      "locked_version": "1.1.12"
+    },
+    "yum": {
+      "locked_version": "3.0.2"
+    },
+    "yum-epel": {
+      "locked_version": "0.2.0"
+    },
+    "dmg": {
+      "locked_version": "2.1.2"
+    },
+    "windows": {
+      "locked_version": "1.12.4"
+    },
+    "rsyslog": {
+      "locked_version": "1.10.2"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    },
+    "powershell": {
+      "locked_version": "1.1.2"
+    }
+  }
+}

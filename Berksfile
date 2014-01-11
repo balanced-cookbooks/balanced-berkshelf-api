@@ -21,7 +21,6 @@ source 'https://api.berkshelf.com'
 metadata
 
 # When bootstrapping, we need to reference our cookbooks more manually
-cookbook 'berkshelf-api', path: '../berkshelf'
 cookbook 'poise', github: 'poise/poise'
 cookbook 'citadel', github: 'balanced-cookbooks/citadel'
 cookbook 'balanced-citadel', github: 'balanced-cookbooks/balanced-citadel'
