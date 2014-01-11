@@ -9,7 +9,8 @@ GIT
 
 GIT
   remote: git://github.com/berkshelf/berkshelf.git
-  revision: 9d12f899dc908cfce0450af23e8572fa5712b03f
+  revision: f3e8a718b5867272b2a23cad4d119bec624238d0
+  ref: f3e8a718b5867272b2a23cad4d119bec624238d0
   specs:
     berkshelf (3.0.0.beta4)
       addressable (~> 2.3.4)
