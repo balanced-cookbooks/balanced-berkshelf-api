@@ -4,14 +4,15 @@
       "locked_version": "1.0.0",
       "path": "."
     },
-    "berkshelf-api": {
-      "locked_version": "1.0.0",
-      "path": "../berkshelf"
-    },
     "poise": {
-      "locked_version": "1.0.1",
+      "locked_version": "1.0.3",
       "git": "git://github.com/poise/poise.git",
-      "ref": "012ceb7dcbb2a3982a172e2019d92d9ef051bd36"
+      "ref": "c550fe5c1996947545294497b29ba9c5d7071e6d"
+    },
+    "poise-ruby": {
+      "locked_version": "1.0.0",
+      "git": "git://github.com/poise/poise-ruby.git",
+      "ref": "9007ad9ce0c566780ac3b989c1c6355bb2161bbc"
     },
     "citadel": {
       "locked_version": "1.0.1",
@@ -30,14 +31,20 @@
       "locked_version": "0.0.0",
       "path": "./test/cookbooks/balanced-berkshelf-api_test"
     },
+    "berkshelf-api": {
+      "locked_version": "1.0.0"
+    },
     "nginx": {
       "locked_version": "2.2.0"
     },
+    "yum": {
+      "locked_version": "3.0.4"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
     "git": {
       "locked_version": "2.9.0"
-    },
-    "rbenv": {
-      "locked_version": "1.7.1"
     },
     "runit": {
       "locked_version": "1.5.8"
@@ -45,14 +52,8 @@
     "bluepill": {
       "locked_version": "2.3.1"
     },
-    "build-essential": {
-      "locked_version": "1.4.2"
-    },
     "ohai": {
       "locked_version": "1.1.12"
-    },
-    "yum": {
-      "locked_version": "3.0.2"
     },
     "yum-epel": {
       "locked_version": "0.2.0"
@@ -61,16 +62,13 @@
       "locked_version": "2.1.2"
     },
     "windows": {
-      "locked_version": "1.12.4"
+      "locked_version": "1.12.6"
     },
     "rsyslog": {
       "locked_version": "1.10.2"
     },
     "chef_handler": {
       "locked_version": "1.1.4"
-    },
-    "powershell": {
-      "locked_version": "1.1.2"
     }
   }
 }

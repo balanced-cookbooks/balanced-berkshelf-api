@@ -16,12 +16,13 @@
 # limitations under the License.
 #
 
-source 'https://api.berkshelf.com'
+source 'https://api.berkshelf.com/'
 
 metadata
 
 # When bootstrapping, we need to reference our cookbooks more manually
 cookbook 'poise', github: 'poise/poise'
+cookbook 'poise-ruby', github: 'poise/poise-ruby'
 cookbook 'citadel', github: 'balanced-cookbooks/citadel'
 cookbook 'balanced-citadel', github: 'balanced-cookbooks/balanced-citadel'
 
